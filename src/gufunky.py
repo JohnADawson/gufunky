@@ -1,4 +1,4 @@
-"""Functions for NumPy arrays that loop like gufuncs.
+"""Looping through NumPy arrays like generalized universal functions.
 
     There is a general need for looping over not only functions on
     scalars but also over functions on vectors (or arrays). This concept
