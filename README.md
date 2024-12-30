@@ -6,7 +6,7 @@ To install the package run `pip install gufunky`.
 The documentation is in the
 [docstrings](https://github.com/JohnADawson/gufunky/blob/master/src/gufunky.py).
 
-# Copyright Notice
+# Copyright and License
 
 Copyright (C) 2024 John Dawson
 
