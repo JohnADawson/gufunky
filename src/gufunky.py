@@ -61,6 +61,10 @@ def stack(arrays, out=None, *, casting="same_kind", dtype=None):
     >>> gufunky.stack([0, [1, 2]])
     array([[0, 1],
            [0, 2]])
+    >>> gufunky.stack([], dtype=int)
+    array([], dtype=int64)
+    >>> gufunky.stack([[], 0.0])
+    array([], shape=(0, 2), dtype=float64)
     """
     arrays = list(arrays)
     if arrays:
@@ -82,6 +86,10 @@ def concatenate(arrays, out=None, *, casting="same_kind", dtype=None):
     >>> gufunky.concatenate([[0, 1], [[2], [3]]])
     array([[0, 1, 2],
            [0, 1, 3]])
+    >>> gufunky.concatenate([], dtype=int)
+    array([], dtype=int64)
+    >>> gufunky.concatenate([np.empty((0, 3)), [0.0]])
+    array([], shape=(0, 4), dtype=float64)
     """
     arrays = list(map(np.asanyarray, arrays))
     if arrays:
