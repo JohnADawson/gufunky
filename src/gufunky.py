@@ -96,8 +96,8 @@ def concatenate(arrays, out=None, *, casting="same_kind", dtype=None):
 def pad_indices(shape, indices):
     """Pad indices with arrays for the outermost dimensions of shape.
 
-    >>> import numpy as np
     >>> import gufunky
+    >>> import numpy as np
     >>> a = np.arange(6).reshape((3, 2))
     >>> a
     array([[0, 1],
@@ -124,8 +124,8 @@ def get(a, indices):
 
     and so on.
 
-    >>> import numpy as np
     >>> import gufunky
+    >>> import numpy as np
     >>> a = np.arange(6).reshape((3, 2))
     >>> a
     array([[0, 1],
